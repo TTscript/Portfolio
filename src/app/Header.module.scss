@@ -1,0 +1,207 @@
+@import '@/app/styles/variables';
+@import '@/app/styles/mixins';
+
+.header {
+  margin: 0;
+  background-color: $saffron;
+}
+
+.headerInner {
+  justify-content: space-between;
+  background-color: $saffron;
+  min-height: 80px;
+  width: 100%;
+  padding: 5px;
+}
+
+.headerInner.headerInnerActive {
+  @include vp-767 {
+    min-height: 200%;
+    width: 100%;
+    position: fixed;
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 80%;
+    transition: 5s ease;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+
+.headerInner nav {
+  padding: 0 30px;
+
+  @include vp-1023 {
+    padding: 0 20px
+  }
+
+  @include vp-767 {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    height: 0;
+    width: 100%;
+  }
+}
+
+.headerInner.headerInnerActive nav {
+  @include vp-767 {
+    display: block;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: 3s ease;
+  }
+}
+
+.headerInner nav.headerInnerScrollBar {
+  overflow: auto;
+}
+
+.headerInner ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  padding: 0;
+  margin: 0;
+
+  @include vp-767 {
+    flex-direction: column;
+    padding: 50px 5px 5px;
+    overflow: hidden;
+    min-height: 0;
+    transition: 3s ease;
+  }
+}
+
+.headerInner.headerInnerActive ul {
+  @include vp-767 {
+    transition: 0.5s ease;
+    background-color: $saffron;
+  }
+}
+
+.headerInner li {
+  position: relative;
+  list-style: none;
+}
+
+.headerInner a {
+  display: block;
+  font-family: "Montserrat Black", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: underline;
+  color: $black-coffee;
+  cursor: pointer;
+  margin: 0;
+  padding: 31px 20px;
+
+  @include vp-1023 {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 31px 5px;
+
+  }
+}
+
+.headerInner a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 10px solid $black-coffee;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  background: $black-coffee;
+}
+
+.headerInner a:hover::before {
+  transform: scaleX(1);
+}
+
+.burgerMenu {
+  position: relative;
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+
+  @include vp-767 {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 0;
+    background-color: transparent;
+    z-index: 2;
+  }
+}
+
+.burgerMenu::before {
+  @include vp-767 {
+    content: "";
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    width: 60px;
+    transform: translate(-50%, -50%);
+    height: 5px;
+    background-color: $black-coffee;
+    border-radius: 2px;
+    transition: 1s cubic-bezier(0.99, -0.53, 0.25, 1);
+  }
+}
+
+.burgerMenu span {
+  position: relative;
+  display: block;
+  height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 30px;
+    transform: translateY(-30%);
+    height: 10px;
+    background-color: $black-coffee;
+    border-radius: 2px;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.96, -0.66);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    right: 0;
+    width: 30px;
+    transform: translateY(-80%);
+    height: 10px;
+    background-color: $black-coffee;
+    border-radius: 2px;
+    transition: 0.5s cubic-bezier(0.85, 0.15, 0.25, 1);
+  }
+}
+
+.burgerMenu.burgerMenuActive::before {
+  transform: translate(-50%, -50%) rotate(35deg);
+  height: 10px;
+}
+
+.burgerMenu.burgerMenuActive span {
+  &::before {
+    top: 31%;
+    left: 45%;
+    transform: translateY(-30%) rotate(-35deg);
+  }
+
+  &::after {
+    top: 69%;
+    right: 47%;
+    transform: translateY(-80%) rotate(-35deg);
+  }
+}
