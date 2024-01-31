@@ -24,9 +24,9 @@
 
 .skillInner.pug .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/pug.svg");
   mask: url("../../../../public/icons/pug.svg");
-  -webkit-mask-size: 58px;
+  mask: url("../../../../public/icons/pug.svg");
+  mask-size: 58px;
   mask-size: 58px;
   background-color: $black-coffee;
   width: 58px;
@@ -35,9 +35,9 @@
 
 .skillInner.sass .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/sass.svg");
   mask: url("../../../../public/icons/sass.svg");
-  -webkit-mask-size: 50px;
+  mask: url("../../../../public/icons/sass.svg");
+  mask-size: 50px;
   mask-size: 50px;
   background-color: $black-coffee;
   width: 50px;
@@ -46,9 +46,9 @@
 
 .skillInner.js .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/js.svg");
   mask: url("../../../../public/icons/js.svg");
-  -webkit-mask-size: 50px;
+  mask: url("../../../../public/icons/js.svg");
+  mask-size: 50px;
   mask-size: 50px;
   background-color: $black-coffee;
   width: 50px;
@@ -57,9 +57,9 @@
 
 .skillInner.gulp .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/gulp.svg");
   mask: url("../../../../public/icons/gulp.svg");
-  -webkit-mask-size: 50px 75px;
+  mask: url("../../../../public/icons/gulp.svg");
+  mask-size: 50px 75px;
   mask-size: 50px 75px;
   background-color: $black-coffee;
   width: 50px;
@@ -68,9 +68,9 @@
 
 .skillInner.git .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/git.svg");
   mask: url("../../../../public/icons/git.svg");
-  -webkit-mask-size: 60px 75px;
+  mask: url("../../../../public/icons/git.svg");
+  mask-size: 60px 75px;
   mask-size: 60px 75px;
   background-color: $black-coffee;
   width: 60px;
@@ -79,9 +79,9 @@
 
 .skillInner.figma .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/figma.svg");
   mask: url("../../../../public/icons/figma.svg");
-  -webkit-mask-size: 80px;
+  mask: url("../../../../public/icons/figma.svg");
+  mask-size: 80px;
   mask-size: 80px;
   background-color: $black-coffee;
   width: 80px;
@@ -90,9 +90,9 @@
 
 .skillInner.nextjs .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/nextjs.svg");
   mask: url("../../../../public/icons/nextjs.svg");
-  -webkit-mask-size: 60px;
+  mask: url("../../../../public/icons/nextjs.svg");
+  mask-size: 60px;
   mask-size: 60px;
   background-color: $black-coffee;
   width: 60px;
@@ -101,9 +101,9 @@
 
 .skillInner.docker .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/docker.svg");
   mask: url("../../../../public/icons/docker.svg");
-  -webkit-mask-size: 60px;
+  mask: url("../../../../public/icons/docker.svg");
+  mask-size: 60px;
   mask-size: 60px;
   background-color: $black-coffee;
   width: 60px;
@@ -112,9 +112,9 @@
 
 .skillInner.webpack .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/webpack.svg");
   mask: url("../../../../public/icons/webpack.svg");
-  -webkit-mask-size: 60px;
+  mask: url("../../../../public/icons/webpack.svg");
+  mask-size: 60px;
   mask-size: 60px;
   background-color: $black-coffee;
   width: 60px;
@@ -123,9 +123,9 @@
 
 .skillInner.ts .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/ts.svg");
   mask: url("../../../../public/icons/ts.svg");
-  -webkit-mask-size: 60px;
+  mask: url("../../../../public/icons/ts.svg");
+  mask-size: 60px;
   mask-size: 60px;
   background-color: $black-coffee;
   width: 60px;
@@ -134,9 +134,9 @@
 
 .skillInner.react .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/react.svg");
   mask: url("../../../../public/icons/react.svg");
-  -webkit-mask-size: 60px;
+  mask: url("../../../../public/icons/react.svg");
+  mask-size: 60px;
   mask-size: 60px;
   background-color: $black-coffee;
   width: 60px;
@@ -145,9 +145,9 @@
 
 .skillInner.graphql .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/graphql.svg");
   mask: url("../../../../public/icons/graphql.svg");
-  -webkit-mask-size: 60px;
+  mask: url("../../../../public/icons/graphql.svg");
+  mask-size: 60px;
   mask-size: 60px;
   background-color: $black-coffee;
   width: 60px;
@@ -156,9 +156,9 @@
 
 .skillInner.tailwind .skillImg {
   display: block;
-  -webkit-mask: url("../../../../public/icons/tailwind.svg");
   mask: url("../../../../public/icons/tailwind.svg");
-  -webkit-mask-size: 60px;
+  mask: url("../../../../public/icons/tailwind.svg");
+  mask-size: 60px;
   mask-size: 60px;
   background-color: $black-coffee;
   width: 60px;
@@ -169,9 +169,9 @@
   position: relative;
   left: -5px;
   display: block;
-  -webkit-mask: url("../../../../public/icons/gsap.svg");
   mask: url("../../../../public/icons/gsap.svg");
-  -webkit-mask-size: 60px;
+  mask: url("../../../../public/icons/gsap.svg");
+  mask-size: 60px;
   mask-size: 60px;
   background-color: $black-coffee;
   width: 60px;

@@ -56,9 +56,9 @@
   left: -4px;
   width: 47px;
   height: 47px;
-  -webkit-mask: url("/public/icons/github.svg");
   mask: url("/public/icons/github.svg");
-  -webkit-mask-size: 49px;
+  mask: url("/public/icons/github.svg");
+  mask-size: 49px;
   mask-size: 49px;
   background-color: $white;
 }
