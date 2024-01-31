@@ -1,0 +1,10 @@
+@import '@/app/styles/variables';
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  border-bottom: 2px solid $black-coffee;
+  margin: 0 0 20px;
+  padding-bottom: 50px;
+}

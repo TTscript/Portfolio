@@ -7,8 +7,8 @@ export const MainInfo = () => {
         <section className={classes.mainInfo}>
             <h1 className="visually-hidden">Main information</h1>
             <AboutMe />
-            <AllSkills />
-            <Strengths />
+            {/*<AllSkills />*/}
+            {/*<Strengths />*/}
             <Projects />
             <Experience />
             <Education />

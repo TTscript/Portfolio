@@ -13,16 +13,17 @@
 
 .educationInner {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 29px;
   padding: 0;
-  margin: 20px;
+  margin-bottom: 50px;
+
 }
 
 .educationItem {
   background-color: $black-olive;
   width: 350px;
+  height: 215px;
   border-radius: 5px;
   padding: 25px 25px;
   margin: 0;

@@ -15,7 +15,7 @@ export const NameAndContacts = () => {
               <p data-profession="profession">Front-end Developer</p>
           </div>
           <p id="phone" data-phone="phone"><a href="tel:+77761133222">+7-776-113-32-22</a></p>
-          <p data-address="address">Nur-Sultan, <br /> Kazakhstan 010000</p>
+          <p data-address="address">Astana, <br /> Kazakhstan 010000</p>
       </section>
   )
 }

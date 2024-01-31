@@ -10,8 +10,7 @@ export default function Home() {
             <ContactInfo />
             <MainInfo />
         </main>
-        <Footer />
+        {/*<Footer />*/}
       </div>
-
   );
 }

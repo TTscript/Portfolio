@@ -14,7 +14,7 @@ export const Experience = ({className}: EducationProps) => {
                         <h3>Front-end Developer <span>at Morre Software Company</span></h3>
                         <p>Aug 2022 - Present</p>
                     </div>
-                    <p className={classes.responsibilities}>Technology stack - React, Nextjs, Typescript, Tailwind, RestAPI, graphQL, Figma, Webpack</p>
+                    <p className={classes.responsibilities}>Technology stack - React, Nextjs, Typescript, Tailwind, RestAPI, GraphQL, GSAP, Figma, Webpack</p>
                 </li>
                 <li className={classes.educationItem}>
                     <div className={classes.job}>
