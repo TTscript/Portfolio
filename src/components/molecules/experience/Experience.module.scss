@@ -1,0 +1,63 @@
+@import '@/app/styles/variables';
+
+.education {
+  & h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 10px;
+  }
+}
+
+.educationInner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 29px;
+  padding: 0;
+  margin: 20px;
+}
+
+.educationItem {
+  background-color: $black-olive;
+  width: 350px;
+  border-radius: 5px;
+  padding: 25px 25px;
+  margin: 0;
+
+  & h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    color: $olive-green;
+    margin: 0;
+    padding: 0;
+  }
+
+  & span {
+    display: block;
+    font-weight: 700;
+    color: $white;
+    text-transform: initial;
+    margin: 0;
+    padding: 0;
+  }
+
+  & p {
+    font-weight: 500;
+    color: $bright-gray;
+    margin: 0;
+    padding: 0;
+  }
+
+  & .job {
+    margin-bottom: 15px;
+  }
+
+  & .responsibilities {
+    text-align: justify;
+    color: $bright-gray;
+  }
+}

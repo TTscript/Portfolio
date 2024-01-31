@@ -1,0 +1,55 @@
+@import '@/app/styles/variables';
+
+.allSkills {
+  margin-bottom: 50px;
+
+  & h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 10px;
+  }
+
+  & ul {
+    list-style: none;
+  }
+
+  & li {
+    position: relative;
+    color: $white;
+    background-color: $black-coffee;
+    padding: 0 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: $white;
+      transform: rotate(45deg);
+      border-radius: 2px;
+      animation: rotate-all-skills 3s linear infinite;
+    }
+  }
+}
+
+@keyframes rotate-all-skills {
+  0% {
+    transform: rotate(45deg);
+    background-color: $white;
+  }
+
+  50% {
+    transform: rotate(160deg);
+    background-color: $saffron;
+  }
+
+  100% {
+    transform: rotate(320deg);
+    background-color: $white;
+  }
+}

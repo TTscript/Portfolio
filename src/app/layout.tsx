@@ -1,11 +1,33 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./styles/globals.scss";
-import {Montserrat_Subrayada} from "@next/font/google";
+import "@/app/styles/globals.scss";
+import {Montserrat_Subrayada} from "next/font/google";
+import localFont from 'next/font/local'
 
-const montserrat = Montserrat_Subrayada({
-  subsets: ['latin'],
-  weight: '400'
+const montserrat = localFont({
+  src: [
+    {
+      path: '../../public/fonts/montserrat-regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/montserrat-medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/montserrat-bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/montserrat-black.woff2',
+      weight: '900',
+      style: 'normal',
+    },
+  ],
+  display: "swap"
 })
 
 export const metadata: Metadata = {

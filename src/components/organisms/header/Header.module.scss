@@ -91,10 +91,11 @@
 
 .headerInner a {
   display: block;
-  font-family: "Montserrat Black", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
+  font-weight: 900;
   text-decoration: underline;
+  text-underline-offset: 5px;
   color: $black-coffee;
   cursor: pointer;
   margin: 0;
@@ -122,86 +123,4 @@
 
 .headerInner a:hover::before {
   transform: scaleX(1);
-}
-
-.burgerMenu {
-  position: relative;
-  display: none;
-  cursor: pointer;
-  padding: 10px;
-
-  @include vp-767 {
-    display: block;
-    width: 80px;
-    height: 80px;
-    border: 0;
-    background-color: transparent;
-    z-index: 2;
-  }
-}
-
-.burgerMenu::before {
-  @include vp-767 {
-    content: "";
-    position: absolute;
-    top: 49%;
-    left: 50%;
-    width: 60px;
-    transform: translate(-50%, -50%);
-    height: 5px;
-    background-color: $black-coffee;
-    border-radius: 2px;
-    transition: 1s cubic-bezier(0.99, -0.53, 0.25, 1);
-  }
-}
-
-.burgerMenu span {
-  position: relative;
-  display: block;
-  height: 100%;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width: 30px;
-    transform: translateY(-30%);
-    height: 10px;
-    background-color: $black-coffee;
-    border-radius: 2px;
-    transition: 0.5s cubic-bezier(0.25, 0.1, 0.96, -0.66);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 80%;
-    right: 0;
-    width: 30px;
-    transform: translateY(-80%);
-    height: 10px;
-    background-color: $black-coffee;
-    border-radius: 2px;
-    transition: 0.5s cubic-bezier(0.85, 0.15, 0.25, 1);
-  }
-}
-
-.burgerMenu.burgerMenuActive::before {
-  transform: translate(-50%, -50%) rotate(35deg);
-  height: 10px;
-}
-
-.burgerMenu.burgerMenuActive span {
-  &::before {
-    top: 31%;
-    left: 45%;
-    transform: translateY(-30%) rotate(-35deg);
-  }
-
-  &::after {
-    top: 69%;
-    right: 47%;
-    transform: translateY(-80%) rotate(-35deg);
-  }
 }

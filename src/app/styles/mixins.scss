@@ -1,3 +1,9 @@
+@mixin vp-455 {
+  @media (max-width: 455px) {
+    @content;
+  }
+}
+
 @mixin vp-767 {
   @media (max-width: 767px) {
     @content;

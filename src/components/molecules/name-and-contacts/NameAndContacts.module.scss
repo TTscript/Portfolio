@@ -1,0 +1,95 @@
+@import '@/app/styles/variables';
+
+.nameAndContacts {
+  margin: 0 0 60px;
+  padding: 0;
+
+  & h3 {
+    position: relative;
+    font-weight: 900;
+    color: $black-coffee;
+    font-size: 56px;
+    line-height: 56px;
+    margin: 0;
+    padding: 0;
+  }
+
+  & p {
+    font-weight: 700;
+    color: $black-coffee;
+    font-size: 16px;
+    border-bottom: 2px solid $black-coffee;
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+  }
+
+  & p[data-profession="profession"] {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px;
+    border: 0;
+  }
+
+  & p[data-phone="phone"] a {
+    color: $black-coffee;
+  }
+
+  & p[data-phone="phone"] a::before {
+    content: "";
+    display: inline-block;
+    -webkit-mask: url("../../../../public/icons/phone.svg");
+    mask: url("../../../../public/icons/phone.svg");
+    -webkit-mask-size: 20px;
+    mask-size: 20px;
+    background-color: $black-coffee;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+
+  & p[data-address="address"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-mask: url("../../../../public/icons/location.svg");
+    mask: url("../../../../public/icons/location.svg");
+    -webkit-mask-size: 20px;
+    mask-size: 20px;
+    background-color: $black-coffee;
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+  }
+
+  & p[data-address="address"] {
+    position: relative;
+    padding-left: 45px;
+  }
+}
+
+.rhombuses {
+  display: inline-block;
+}
+
+.rhombus {
+  display: inline-block;
+  background-color: $black-coffee;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  margin-right: 10px;
+  border-radius: 2px;
+  animation: rotate-rhombus 6s linear 0s infinite forwards;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes rotate-rhombus {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(320deg);
+  }
+}

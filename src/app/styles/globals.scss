@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'variables.scss';
-@import 'reboot.scss';
+@import 'variables';
+@import 'reboot';
 
 html, body {
   height: 100%;
@@ -19,7 +19,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1920px;
   min-height: 100vh;
+  min-width: 100%;
 }
 

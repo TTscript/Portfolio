@@ -1,0 +1,75 @@
+@import 'src/app/styles/variables';
+@import 'src/app/styles/mixins';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  width: 100%;
+  background-color: $black-coffee;
+  border-top: 2px double $saffron;
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  padding: 0 30px;
+
+  @include vp-455 {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+}
+
+.footerGithub {
+  padding: 0 30px;
+
+  @include vp-455 {
+    order: 2;
+    margin-bottom: 30px;
+  }
+}
+
+.footerGithub a {
+  position: relative;
+  display: block;
+  width: 47.5px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.footerGithub a::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -4px;
+  width: 47px;
+  height: 47px;
+  -webkit-mask: url("../../public/icons/github.svg");
+  mask: url("../../public/icons/github.svg");
+  -webkit-mask-size: 49px;
+  mask-size: 49px;
+  background-color: $white;
+}
+
+.footerInner p {
+  font-size: 20px;
+  line-height: 28px;
+  color: $white;
+  margin: 0;
+
+  @include vp-455 {
+    order: 3;
+  }
+}
